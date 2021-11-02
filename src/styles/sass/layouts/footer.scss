@@ -1,0 +1,17 @@
+.footer {
+    background-color: #000;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-logo {
+        svg {
+            width: 122px;
+        }
+    }
+    &-copyright {
+        margin: 31px 0 0 0;
+        color: #FFF;
+    }
+}

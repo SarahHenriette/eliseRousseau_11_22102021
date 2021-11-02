@@ -1,0 +1,49 @@
+@import './../base/mixins.scss';
+@import './../base/fonts.scss';
+
+.banner {
+    width: 85%;
+    height: 223px;
+    margin: 2em auto;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    background-image: url('./../../../assets/bannerHomepage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mobile-only{
+        background-image: url('./../../../assets/bannerHomepageMobile.png');
+        border-radius: 10px;
+        height: 111px;
+     }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.3;
+        position: absolute;
+    }
+
+    &-title {
+        color: #FFF;
+        font-family: $font;
+        font-size: 2em;
+        position: absolute;
+        z-index: 1;
+        font-weight: 500;
+        @include mobile-only{
+            font-size: 24px;
+            left: 24px;
+            width: 217px;
+         }
+
+    }
+}

@@ -1,0 +1,43 @@
+@import './../base/colors.scss';
+@import './../base/mixins.scss';
+
+
+.header {
+    width: 85%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2em;
+    &-logo {
+        svg {
+            width: 210px;
+            height: auto;
+            @include mobile-only{
+                width: 145px;
+            }
+        }
+    }
+    &-nav {
+        ul {
+            list-style-type: none;
+            display: flex;
+            a {
+                color: $colorPrimary;
+                margin-right: 2em;
+                text-decoration: none;
+                @include mobile-only{
+                   font-size: 0.9em;
+                   margin-right: 1em;
+                }
+                &:active {
+                    text-decoration: underline;
+                }
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
