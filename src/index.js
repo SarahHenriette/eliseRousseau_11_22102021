@@ -9,6 +9,7 @@ import Logement from './pages/Logement';
 import Error from './pages/Error';
 import reportWebVitals from './reportWebVitals';
 
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
@@ -22,9 +23,7 @@ ReactDOM.render(
         <Route path="/aPropos">
           <Apropos />
         </Route>
-        <Route path="/logement/:id">
-          <Logement/>
-        </Route>
+        <Route path="/logement/:title" component={Logement}/>
         <Route>
           <Error />
         </Route>

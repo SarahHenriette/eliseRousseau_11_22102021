@@ -7,7 +7,7 @@ class Galerie extends React.Component {
     render() {
       const logements = require('../logements.json')
       const listLogements = logements.map((logement) =>
-      <Card title={logement.title} key={logement.id}/>
+      <Card data={logement} key={logement.id}/>
     );
       return (
         <div className="galerie">

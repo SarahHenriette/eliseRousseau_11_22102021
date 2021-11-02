@@ -10,6 +10,9 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 2em;
+    @include mobile-only{
+        width: 90%;
+    }
     &-logo {
         svg {
             width: 210px;

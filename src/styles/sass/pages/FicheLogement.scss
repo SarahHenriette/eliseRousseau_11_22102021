@@ -1,3 +1,108 @@
-.FicheLogement {
-    background-color: orange;
+@import './../base/fonts.scss';
+@import './../base/colors.scss';
+@import './../base/mixins.scss';
+
+.ficheLogement {
+    margin: auto;
+    font-family: $font;
+    color: $colorPrimary;
+    &-infos {
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        margin: auto;
+        @include mobile-only{
+            flex-direction: column;
+            width: 90%;
+        }
+        &_left {
+            @include mobile-only{
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+        &_logementTitle {
+            font-size: 36px;
+            font-weight: 500;
+            margin: 0;
+            @include mobile-only{
+                font-size: 18px;
+            }
+        }
+        &_logementLocation {
+            margin: 7px 0;  
+            font-size: 18px; 
+            @include mobile-only{
+                font-size: 14px;
+            }
+        }
+        &_host {
+            display: flex;
+            align-items: flex-start;
+        }
+        &_hostName {
+            width: 70px;
+            text-align: end;
+            line-height: 25px;
+            margin: 0;
+            font-size: 18px;
+            @include mobile-only{
+                font-size: 15px;
+                line-height: 17px;
+            }
+        }
+        &_hostPicture {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin-left: 10px;
+            @include mobile-only{
+                width: 32px;
+                height: 32px;
+            }
+        }
+        &_tags {
+            margin: 2em 0;
+            @include mobile-only{
+                margin: 0.7em 0;
+            }  
+        }
+        &_tag  {
+            padding: 10px 20px;
+            border-radius: 50px;
+            width: auto;
+            background-color: $colorPrimary;
+            color: #FFF;
+            margin-right: 10px;
+            @include mobile-only{
+                height: 18px;
+                padding: 6px 22px;
+                font-size: 10px;
+            }
+        }
+        &_starts {
+            width: 168px;
+            display: flex;
+            justify-content: space-between;
+            margin: 2em 0;
+             @include mobile-only{
+                // width: 115px;
+                margin: 0.5em 0;
+            }  
+        }
+        &_start {
+            width: 30px;
+            height: 30px;
+            @include mobile-only{
+                // width: 15px;
+                // height: 15px;
+            }
+        }
+    }
+
+   
+    
+    
 }
