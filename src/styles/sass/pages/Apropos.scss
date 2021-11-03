@@ -1,3 +1,8 @@
-.Apropos {
-    background-color: blue;
+.apropos {
+    &-collapses {
+        .collapse {
+            width: 75%;
+            margin: auto;
+        }
+    }
 }

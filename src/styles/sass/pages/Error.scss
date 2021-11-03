@@ -1,3 +1,30 @@
-.Error  {
-    background-color: green;
+@import './../base/fonts.scss';
+@import './../base/colors.scss';
+@import './../base/mixins.scss';
+
+.error  {
+    h1, p, a {
+        font-family: $font;
+        text-align: center;
+        color: $colorPrimary;
+    }
+    h1 {
+        font-size: 288px;
+        font-weight: 700;
+        margin-bottom: 0px;
+        @include mobile-only{
+            font-size: 96px;
+        }
+    }
+    p {
+        font-size: 36px;
+        font-weight: 500;
+    }
+    &-returnHomepage {
+        font-size: 18px;
+        text-decoration: underline;
+        display: block;
+        margin: 15em 0 5em 0;
+
+    }
 }
