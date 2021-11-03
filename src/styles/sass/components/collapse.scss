@@ -1,0 +1,101 @@
+@import './../base/colors.scss';
+@import './../base/mixins.scss';
+
+
+.ficheLogement-collapses {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    @include mobile-only{
+        width: 90%;
+        flex-direction: column;
+        margin-top: 2em;
+    }
+}
+.collapse {
+    width: 48%;
+    @include mobile-only{
+        width: 100%;
+    }
+    &-head {
+        height: 52px;
+        background-color: $colorPrimary;
+        color: #FFF;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        z-index: 2;
+    }
+    &-title {
+        margin-left: 20px;
+    }
+    &-arrow {
+        margin-right: 20px;
+        cursor: pointer;
+        transform: rotate(0);
+        transition: transform .3s ease-in-out
+    }
+    &-arrow-active {
+        margin-right: 20px;
+        cursor: pointer;
+        transform: rotate(180deg);
+        transition: transform .3s ease-in-out
+
+    }
+    &-content {
+        border-radius: 10px;
+        position: relative;
+        width: 100%;
+        top: -20px;
+        z-index: 1;
+        height: 20px;
+        opacity: 0;
+        transition: min-height .3s ease-in-out, opacity .3s ease-in-out;
+        p {
+            margin: 0;
+            opacity: 0;
+        }
+        ul li {
+            list-style-type: none;
+            opacity: 0;
+
+        }
+    }
+
+    &-content-active {
+        border-radius: 10px;
+        background-color: $greyLight;
+        position: relative;
+        width: 100%;
+        top: -20px;
+        z-index: 1;
+        min-height: 115px;
+        height: auto;
+        opacity: 1;
+        transition: min-height .3s ease-in-out, opacity .3s ease-in-out;
+        padding-bottom: 2em;
+        
+        p {
+            margin: auto;
+            font-size: 18px;
+            width: 90%;
+            padding: 2.5em 0 0 0;
+        }
+        ul {
+            padding-top: 40px;
+            padding-left: 20px;
+            margin: 0;
+            
+        }
+        ul li {
+            list-style-type: none;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+    }
+    
+}

@@ -30,8 +30,8 @@ class Logement extends React.Component {
                 </div>
 
                 <div className="ficheLogement-collapses">
-                    <Collapse/>
-                    <Collapse/>
+                    <Collapse title="Description" content={logement.description}/>
+                    <Collapse title="Equipements" content={logement.equipments}/>
                 </div>
                 <Footer/>
             </div>

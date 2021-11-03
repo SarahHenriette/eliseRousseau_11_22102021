@@ -41,6 +41,10 @@
         &_host {
             display: flex;
             align-items: flex-start;
+            justify-content: flex-end;
+            @include mobile-only{
+                align-items: center;
+            }
         }
         &_hostName {
             width: 70px;
@@ -59,12 +63,14 @@
             border-radius: 50%;
             margin-left: 10px;
             @include mobile-only{
-                width: 32px;
-                height: 32px;
+                // width: 32px;
+                // height: 32px;
             }
         }
         &_tags {
             margin: 2em 0;
+            display: flex;
+            flex-wrap: wrap;
             @include mobile-only{
                 margin: 0.7em 0;
             }  
@@ -76,10 +82,11 @@
             background-color: $colorPrimary;
             color: #FFF;
             margin-right: 10px;
+            margin-bottom: 10px;
             @include mobile-only{
                 height: 18px;
                 padding: 6px 22px;
-                font-size: 10px;
+                // font-size: 10px;
             }
         }
         &_starts {
