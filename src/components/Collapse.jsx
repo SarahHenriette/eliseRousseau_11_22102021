@@ -9,12 +9,6 @@ class Collapse extends React.Component {
         }
     }
     render() {
-        // if(Array.isArray(this.props.content)){
-        //     console.log(this.props.content)
-        //     const listEquipements = this.props.content.map((equipement, index)=> {
-        //         <li key={index}>{equipement}</li>
-        //     })
-        // }
         return (
             <div className="collapse">
                 <div className="collapse-head">

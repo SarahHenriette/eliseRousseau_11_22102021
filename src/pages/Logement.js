@@ -17,7 +17,7 @@ class Logement extends React.Component {
         return(
             <div className="ficheLogement">
                 <Header/>
-                <Carrousel/>
+                <Carrousel slides={logement.pictures}/>
                 <div className="ficheLogement-infos">
                     <div className="ficheLogement-infos_right"> 
                         <InfosLogement title={logement.title} location={logement.location}/>
