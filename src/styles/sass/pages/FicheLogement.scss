@@ -86,7 +86,6 @@
             @include mobile-only{
                 height: 18px;
                 padding: 6px 22px;
-                // font-size: 10px;
             }
         }
         &_starts {
@@ -95,17 +94,16 @@
             justify-content: space-between;
             margin: 2em 0;
              @include mobile-only{
-                // width: 115px;
                 margin: 0.5em 0;
             }  
         }
         &_start {
-            width: 30px;
-            height: 30px;
-            @include mobile-only{
-                // width: 15px;
-                // height: 15px;
+            fill: #E3E3E3;
+                @include mobile-only{
             }
+        }
+        &_startActive {
+            fill: $colorPrimary;
         }
     }
 

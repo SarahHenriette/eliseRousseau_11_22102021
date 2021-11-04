@@ -10,7 +10,7 @@ class Carrousel extends React.Component {
         }
     }
     render(){
-        console.log(this.props.slides)
+        // console.log(this.props.slides)
         const listSlides = this.props.slides.map((slide, index) => {
            return (
                <div className={index === this.state.current ? 'slide active' : 'slide'} key={index}>

@@ -25,7 +25,7 @@ class Logement extends React.Component {
                     </div>
                     <div className="ficheLogement-infos_left">
                         <Host host={logement.host}/>
-                        <Starts/>
+                        <Starts rating={logement.rating}/>
                     </div>
                 </div>
 
