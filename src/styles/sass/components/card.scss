@@ -1,4 +1,5 @@
 @import './../base/colors.scss';
+@import './../base/mixins.scss';
 
 .card {
     width: 340px;
@@ -8,6 +9,9 @@
     margin-top: 2%;
     position: relative;
     overflow: hidden;
+    @include mobile-only {
+        margin-bottom: 5%;
+    }
     &::after {
         content: "";
         width: 100%;

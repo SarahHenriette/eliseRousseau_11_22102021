@@ -6,7 +6,7 @@
     width: 85%;
     display: flex;
     justify-content: space-between;
-    margin: auto;
+    margin: auto auto 22% auto;
     @include mobile-only{
         width: 90%;
         flex-direction: column;

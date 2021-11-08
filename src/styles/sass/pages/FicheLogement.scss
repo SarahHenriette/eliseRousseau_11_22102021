@@ -10,7 +10,7 @@
         display: flex;
         justify-content: space-between;
         width: 85%;
-        margin: auto;
+        margin: 7% auto 4% auto;
         @include mobile-only{
             flex-direction: column;
             width: 90%;
@@ -47,7 +47,7 @@
             }
         }
         &_hostName {
-            width: 70px;
+            width: 90px;
             text-align: end;
             line-height: 25px;
             margin: 0;
@@ -107,7 +107,6 @@
         }
     }
 
-   
-    
+  
     
 }

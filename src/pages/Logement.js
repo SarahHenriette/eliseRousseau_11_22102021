@@ -1,13 +1,13 @@
 import React from 'react';
-import '../styles/sass/pages/Home.scss';
-import Header from './../components/Header'
-import Footer from './../components/Footer'
-import Carrousel from './../components/Carrousel'
-import Starts from './../components/Starts'
-import Tags from './../components/Tags'
-import Host from './../components/Host'
-import InfosLogement from './../components/InfosLogement'
-import Collapse from './../components/Collapse'
+import '../styles/sass/pages/FicheLogement.scss';
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import Carrousel from '../components/Carrousel'
+import Starts from '../components/Starts'
+import Tags from '../components/Tags'
+import Host from '../components/Host'
+import InfosLogement from '../components/InfosLogement'
+import Collapse from '../components/Collapse'
 
 class Logement extends React.Component {
     render(){

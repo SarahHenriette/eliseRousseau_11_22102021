@@ -3,7 +3,7 @@
 @import './../base/mixins.scss';
 
 .error  {
-    h1, p, a {
+    h1, &-text, a {
         font-family: $font;
         text-align: center;
         color: $colorPrimary;
@@ -12,19 +12,27 @@
         font-size: 288px;
         font-weight: 700;
         margin-bottom: 0px;
-        @include mobile-only{
+        @include mobile-only {
             font-size: 96px;
         }
     }
-    p {
+    &-text {
         font-size: 36px;
         font-weight: 500;
+        @include mobile-only {
+            font-size: 18px;
+            width: 85%;
+            margin: auto;
+        }
     }
     &-returnHomepage {
         font-size: 18px;
         text-decoration: underline;
         display: block;
         margin: 15em 0 5em 0;
+        @include mobile-280-only {
+            font-size: 14px;
+        }
 
     }
 }

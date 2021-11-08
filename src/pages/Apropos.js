@@ -3,7 +3,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Banner from '../components/Banner';
 import img from './../assets/bannerAboutPage.png'
-import Collapse from './../components/Collapse'
+import Collapse from '../components/Collapse'
 
 function Apropos() {
   return (

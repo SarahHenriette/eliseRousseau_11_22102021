@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import './styles/index.css';
 import Home from './pages/Home';
-import FicheLogement from './pages/FicheLogement';
 import Apropos from './pages/Apropos';
 import Logement from './pages/Logement';
 import Error from './pages/Error';
@@ -16,9 +15,6 @@ ReactDOM.render(
       <Switch>
         <Route exact path="/">
           <Home />
-        </Route>
-        <Route path="/ficheLogement">
-          <FicheLogement />
         </Route>
         <Route path="/aPropos">
           <Apropos />
