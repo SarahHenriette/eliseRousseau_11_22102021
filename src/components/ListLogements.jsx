@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/sass/layouts/galerie.scss';
 import Card from '../components/Card'
 
-class Galerie extends React.Component {
+class ListLogements extends React.Component {
   
     render() {
       const logements = require('../logements.json')
@@ -18,4 +18,4 @@ class Galerie extends React.Component {
     }
   }
   
-  export default Galerie;
+  export default ListLogements;

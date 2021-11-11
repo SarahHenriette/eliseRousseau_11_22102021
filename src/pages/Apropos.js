@@ -1,3 +1,4 @@
+import React from 'react';
 import '../styles/sass/pages/Apropos.scss';
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -5,9 +6,11 @@ import Banner from '../components/Banner';
 import img from './../assets/bannerAboutPage.png'
 import Collapse from '../components/Collapse'
 
-function Apropos() {
-  return (
-    <div className="apropos">
+
+class Apropos extends React.Component {
+  render(){
+    return(
+      <div className="apropos">
       <Header/>
       <Banner background={img} title=""/>
       <div className="apropos-collapses">
@@ -18,7 +21,8 @@ function Apropos() {
       </div>
       <Footer/>
     </div>
-  );
+    )
+  }
 }
 
 export default Apropos;
