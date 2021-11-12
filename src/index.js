@@ -13,16 +13,10 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/aPropos">
-          <Apropos />
-        </Route>
+        <Route exact path="/" component={Home}/>
+        <Route path="/aPropos" component={Apropos}/>
         <Route path="/logement/:title" component={Logement}/>
-        <Route>
-          <Error />
-        </Route>
+        <Route component={Error} />
       </Switch>
     </Router>
   </React.StrictMode>,
