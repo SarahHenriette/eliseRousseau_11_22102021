@@ -12,7 +12,7 @@ import Collapse from '../components/Collapse'
 class Logement extends React.Component {
     render(){
         const logements = require('../logements.json')
-        const logement = logements.filter(logement => logement.title === this.props.match.params.title)[0];
+        const logement = logements.filter(logement => logement.id === this.props.match.params.id)[0];
  
         return(
             <div className="ficheLogement">
