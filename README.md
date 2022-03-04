@@ -1,4 +1,20 @@
-# Getting Started with Create React App
+# KASA 
+KASA mm'a recruter pour développer leur nouvelle plateforme web. Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour Kasa fait partie des leaders de la location d’appartements entre particuliers en France.
+
+J'ai du développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma.
+
+## Start application 
+ 1 - Use command "npm install" for install dependances
+ 2 - Use command "npm start" 
+
+## Compétences 
+ - Développer les routes d'une application web avec React Router
+ - Initialiser une application web avec un framework
+ - Créer des composants avec React
+
+## Démo
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +83,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
