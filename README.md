@@ -27,7 +27,7 @@ $ npm start
 Puis allez à l'adresse : `http://127.0.0.1:3000/`
 
 
-## Compétences 
+## Compétences acquises
  - Développer les routes d'une application web avec React Router
  - Initialiser une application web avec un framework
  - Créer des composants avec React
